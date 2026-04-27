@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.db
+*.csv
+*.log
+*.pid
+api_response.json
