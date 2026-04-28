@@ -2,6 +2,10 @@
 
 這是一個使用 Python、Streamlit、Folium 搭配 CWA 氣象局 API (F-A0010-001) 所開發的台灣農業氣象預報系統。此應用程式會自動擷取最新的氣象資料（最高溫、最低溫），存入 SQLite3 資料庫中，並在網頁介面上以動態地圖及表格呈現。
 
+## 🌐 網站 Demo
+
+**線上 Demo 網址:** [點此查看 Demo (Streamlit Cloud)](https://hw2-web-app-hhm5pytxy3j5vi36fcf7ga.streamlit.app/)
+
 ## 網頁介面預覽
 ![Demo 網頁截圖](demo.png)
 
