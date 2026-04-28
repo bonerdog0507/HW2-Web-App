@@ -4,6 +4,7 @@ import folium
 from streamlit_folium import st_folium
 import os
 import sqlite3
+import scraper
 
 # 設定網頁版面
 st.set_page_config(page_title="台灣農業氣象預報", layout="wide")
@@ -44,6 +45,10 @@ def get_hex_color(avg_temp):
 # 載入資料
 @st.cache_data
 def load_data():
+    if not os.path.exists("data.db"):
+        st.info("初次執行或找不到資料庫，正在自動抓取最新氣象資料...")
+        scraper.fetch_weather_data()
+        
     if not os.path.exists("data.db"):
         return None
         
